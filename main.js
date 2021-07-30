@@ -51,4 +51,4 @@ setInterval(function () {
     .catch((err) => {
       console.error(err);
     });
-}, 1000 * 60 * 2);
+}, 1000 * 60 * 60 * 4);
