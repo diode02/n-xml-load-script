@@ -6,6 +6,7 @@ var Binary = require("mongodb").Binary;
 axios.defaults.timeout = 100000;
 
 setInterval(function () {
+  console.log("Hitting file");
   axios
     .get("https://wintergarten.eventim-inhouse.de/webshop/export/export")
     .then((response) => {
@@ -50,4 +51,4 @@ setInterval(function () {
     .catch((err) => {
       console.error(err);
     });
-}, 1000 * 60 * 60);
+}, 1000 * 60 * 2);
