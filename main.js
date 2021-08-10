@@ -3,7 +3,7 @@ const fs = require("fs");
 var MongoClient = require("mongodb").MongoClient;
 var Binary = require("mongodb").Binary;
 
-axios.defaults.timeout = 200000;
+axios.defaults.timeout = 700000;
 
 setInterval(function () {
   console.log("Hitting file");
@@ -51,4 +51,4 @@ setInterval(function () {
     .catch((err) => {
       console.error(err);
     });
-}, 1000 * 60 * 60 * 4);
+}, 1000 * 60 * 1);
